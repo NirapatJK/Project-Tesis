@@ -1,0 +1,169 @@
+.page {
+  min-height: 100vh;
+  background: #f9fafb;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.header p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-bar input,
+.search-bar select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.cart-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card-image img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.badge {
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.badge.legendary {
+  background: #ef4444;
+  color: white;
+}
+
+.badge.epic {
+  background: #8b5cf6;
+  color: white;
+}
+
+.badge.rare {
+  background: #3b82f6;
+  color: white;
+}
+
+.badge.common {
+  background: #e5e7eb;
+  color: #333;
+}
+
+.description {
+  color: #555;
+  font-size: 0.85rem;
+  margin: 0.5rem 0;
+  flex-grow: 1;
+}
+
+.price {
+  font-weight: bold;
+  color: #111;
+  margin-top: auto;
+}
+
+.stock {
+  font-size: 0.75rem;
+  color: #777;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.btn.detail {
+  background: #111827;
+  color: white;
+}
+
+.btn.detail:hover {
+  background: #374151;
+}
+
+.btn.contact {
+  background: #4f46e5;
+  color: white;
+}
+
+.btn.contact:hover {
+  background: #4338ca;
+}
